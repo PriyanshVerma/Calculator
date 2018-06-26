@@ -232,7 +232,4 @@ public class MainActivity extends AppCompatActivity  {
 //            else if(id == R.id.plus || id == R.id.minus || id == R.id.multiply || id == R.id.divide) return;
         }
 
-    }
-
-
-
+}
