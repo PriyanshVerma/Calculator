@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="DEL" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/delete"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/two"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+
+        android:layout_height="72dp"
+        android:layout_above="@+id/delete"
+        android:layout_alignParentStart="true"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/delete"
+        android:layout_toEndOf="@+id/delete"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/delete"
+        android:layout_toEndOf="@+id/zero"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/delete"
+        android:layout_alignParentEnd="true"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/one"
+        android:layout_alignParentStart="true"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/one"
+        android:layout_toEndOf="@+id/delete"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/one"
+        android:layout_toEndOf="@+id/zero"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/multiply"
+        android:layout_alignParentEnd="true"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/four"
+        android:layout_alignParentStart="true"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/four"
+        android:layout_toEndOf="@+id/delete"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/four"
+        android:layout_toEndOf="@+id/zero"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_above="@+id/minus"
+        android:layout_alignParentEnd="true"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="152dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:gravity="end"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="35dp"
+        tools:ignore="TextViewEdits" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_above="@+id/temp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-152dp"
+        android:ems="10"
+        android:hint="Result"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="38dp" />
+</RelativeLayout>
